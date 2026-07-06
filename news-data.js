@@ -8,9 +8,9 @@
 
 const NEWS = [
   {
-    title: '【プレスリリース】日本初、電子黒板の比較体験倉庫「Kokuban BASE」、京都にオープン',
+    title: '電子黒板の総合窓口「Kokuban BASE」、サイトリニューアル',
     category: 'プレスリリース',
-    date: '2025-06-01',
+    date: '2025-07-06',
     link: 'https://prtimes.jp/main/html/rd/p/000000001.000170903.html',
   },
   {
