@@ -11,7 +11,7 @@ const NEWS = [
     title: '電子黒板の総合窓口「Kokuban BASE」、サイトリニューアル',
     category: 'プレスリリース',
     date: '2025-07-06',
-    link: 'https://prtimes.jp/main/html/rd/p/000000001.000170903.html',
+    link: 'https://kokuban-base.com/',
   },
   {
     title: '代表・竹山、英俊社コラムで最新記事を執筆',
