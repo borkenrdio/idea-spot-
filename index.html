@@ -10,11 +10,6 @@
 </style> <!-- WebSite構造化データ（Google検索強化） --> <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"株式会社 idea spot","url":"https://www.idea-spot.co.jp","potentialAction": {"@type":"SearchAction","target":"https://www.idea-spot.co.jp/?s={search_term_string}","query-input":"required name=search_term_string" }
 } </script>
-<script src="https://cdn.tailwindcss.com?v=3"></script>
-<script>
-tailwind.config={ theme:{ extend:{ colors:{green:{DEFAULT:'#80B020',light:'#A8C800',dark:'#5A8010'}}, fontFamily:{ serif:['"Noto Sans JP"','sans-serif'], sans:['"Noto Sans JP"','sans-serif'], en:['"Noto Sans JP"','sans-serif'], } } }
-}
-</script>
 <style> body{font-family:'Noto Sans JP','Hiragino Sans',sans-serif;color:#333;-webkit-font-smoothing:antialiased}
 .font-serif{font-family:'Noto Sans JP','Hiragino Sans',sans-serif}
 .font-en{font-family:'Noto Sans JP','Hiragino Sans',sans-serif}
@@ -35,6 +30,7 @@ tailwind.config={ theme:{ extend:{ colors:{green:{DEFAULT:'#80B020',light:'#A8C8
 .group:hover .group-hover\:translate-x-1{transform:translateX(.25rem)}
 .focus\:border-green-DEFAULT:focus{outline:none;border-color:#80B020}
 .disabled\:opacity-50:disabled{opacity:.5}.disabled\:cursor-not-allowed:disabled{cursor:not-allowed} </style>
+<link rel="stylesheet" href="css/tailwind.css">
 </head>
 <body class="bg-white">
 <!-- ナビ -->
@@ -119,7 +115,7 @@ tailwind.config={ theme:{ extend:{ colors:{green:{DEFAULT:'#80B020',light:'#A8C8
 <!-- ページ一覧カード -->
 <section class="bg-gray-50 py-16">
   <div class="max-w-5xl mx-auto px-6">
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
 
       <a href="philosophy/" class="group block overflow-hidden border border-gray-100 bg-white hover:border-green-DEFAULT hover:shadow-md transition-all">
         <div class="bg-white overflow-hidden" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:1.25rem">
@@ -168,6 +164,19 @@ tailwind.config={ theme:{ extend:{ colors:{green:{DEFAULT:'#80B020',light:'#A8C8
         <div class="px-5 py-4">
           <p class="font-en text-xs tracking-widest uppercase text-green-DEFAULT mb-1">Recruit</p>
           <p class="font-serif text-base font-medium text-gray-800">採用情報</p>
+        </div>
+      </a>
+
+      <a href="csr/" class="group block overflow-hidden border border-gray-100 bg-white hover:border-green-DEFAULT hover:shadow-md transition-all">
+        <div class="bg-green-50 overflow-hidden" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:1.25rem">
+          <svg viewBox="0 0 160 120" role="img" aria-label="ロボットとパズル" class="w-full h-full text-green-dark" fill="none" stroke="currentColor" stroke-width="3">
+            <rect x="19" y="36" width="62" height="50" rx="7"></rect><path d="M50 36V23m-8 0h16M32 86v13m36-13v13M19 54H8m73 0h11"></path><circle cx="38" cy="58" r="4" fill="currentColor"></circle><circle cx="62" cy="58" r="4" fill="currentColor"></circle><path d="M36 74h28"></path>
+            <path d="M110 23h33v29h-11a9 9 0 1 1-18 0h-4V23Z"></path><path d="M110 63h11a9 9 0 1 0 18 0h4v33h-33V85a9 9 0 1 1 0-18v-4Z"></path>
+          </svg>
+        </div>
+        <div class="px-5 py-4">
+          <p class="font-en text-xs tracking-widest uppercase text-green-DEFAULT mb-1">CSR</p>
+          <p class="font-serif text-base font-medium text-gray-800">CSR活動</p>
         </div>
       </a>
 

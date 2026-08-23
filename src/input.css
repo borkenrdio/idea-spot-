@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --------------------------------------------------------------
+   既存HTMLが使っている「-DEFAULT」付きクラス名の互換レイヤー。
+   Tailwindは DEFAULT を省略形（text-green）で出力するため、
+   text-green-DEFAULT 等はユーティリティとして生成されない。
+   CDN時代のHTMLをそのまま動かすためここで定義する。
+   -------------------------------------------------------------- */
+@layer utilities {
+  .text-green-DEFAULT   { color: #80B020; }
+  .bg-green-DEFAULT     { background-color: #80B020; }
+  .border-green-DEFAULT { border-color: #80B020; }
+  .hover\:text-green-DEFAULT:hover     { color: #80B020; }
+  .hover\:bg-green-DEFAULT:hover       { background-color: #80B020; }
+  .hover\:border-green-DEFAULT:hover   { border-color: #80B020; }
+  .focus\:border-green-DEFAULT:focus   { border-color: #80B020; }
+  .focus\:ring-green-DEFAULT:focus     { --tw-ring-color: #80B020; }
+  .group:hover .group-hover\:text-green-DEFAULT { color: #80B020; }
+  .group:hover .group-hover\:bg-green-DEFAULT   { background-color: #80B020; }
+}

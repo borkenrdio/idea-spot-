@@ -12,12 +12,7 @@ body{font-family:'Noto Sans JP',sans-serif;color:#333;scroll-behavior:smooth}
 .cta-btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
 #mobile-nav{transition:transform .4s;transform:translateX(100%)}
 #mobile-nav.open{transform:translateX(0)}
-</style> <script src="https://cdn.tailwindcss.com?v=3"></script>
-<script>
-tailwind.config={ theme:{ extend:{ colors:{green:{DEFAULT:'#80B020',light:'#A8C800',dark:'#5A8010'}}, fontFamily:{ serif:['"Noto Sans JP"','sans-serif'], sans:['"Noto Sans JP"','sans-serif'], en:['"Noto Sans JP"','sans-serif'], } } }
-}
-</script>
-<style> body{font-family:'Noto Sans JP','Hiragino Sans',sans-serif;color:#333;-webkit-font-smoothing:antialiased}
+</style><style> body{font-family:'Noto Sans JP','Hiragino Sans',sans-serif;color:#333;-webkit-font-smoothing:antialiased}
 .font-serif{font-family:'Noto Sans JP','Hiragino Sans',sans-serif}
 .font-en{font-family:'Noto Sans JP','Hiragino Sans',sans-serif}
 .section-line::after{content:'';display:block;width:40px;height:2px;background:#80B020;margin-top:1rem}
@@ -36,6 +31,7 @@ tailwind.config={ theme:{ extend:{ colors:{green:{DEFAULT:'#80B020',light:'#A8C8
 .group:hover .group-hover\:translate-x-1{transform:translateX(.25rem)}
 .focus\:border-green-DEFAULT:focus{outline:none;border-color:#80B020}
 .disabled\:opacity-50:disabled{opacity:.5}.disabled\:cursor-not-allowed:disabled{cursor:not-allowed} </style>
+<link rel="stylesheet" href="../css/tailwind.css">
 </head>
 <body class="bg-white">
 <div id="nav-placeholder"></div>

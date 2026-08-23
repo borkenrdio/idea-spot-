@@ -1,0 +1,13 @@
+{
+  "name": "idea-spot-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "株式会社 idea spot コーポレートサイト（静的HTML）",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
